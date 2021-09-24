@@ -35,6 +35,13 @@
 |name|varchar(20)||〇||
 |teg_date|date||〇||
 
+## m_favorite
+|属性名|型|PK|NN|FK|
+|-----|--|--|--|--|
+|customer_id|varchar(20)|〇|〇|〇|
+|category_id|int(11)|||〇|
+|item_code|int(11)|〇|||
+
 
 ## m_items
 |属性名|型|PK|NN|FK|

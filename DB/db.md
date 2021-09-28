@@ -41,7 +41,7 @@
 |customer_id|varchar(20)|〇|〇|〇|
 |category_id|int(11)||〇|〇|
 |item_code|int(11)|〇|〇||
-|del_date|date||||
+|del_date|int(11)||||
 
 
 ## m_items

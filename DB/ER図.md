@@ -12,11 +12,8 @@ skinparam class {
 !define MASTER_MARK_COLOR Orange 
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
-package "ECサイト" as target_system {
-    /'
-      マスターテーブルを M、トランザクションを T などで表記
-      １文字なら "主" とか "従" まど日本語でも記載可能
-     '/
+package "bookstore" as target_system {
+   
 
     entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
@@ -71,6 +68,7 @@ package "ECサイト" as target_system {
 order          ||-ri-|{     order_detail
 order_detail    }-do-||     items
 items          }o-le-||     category
+}
 
 
 @enduml

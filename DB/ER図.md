@@ -67,6 +67,7 @@ reg_date
 
 entity "お気に入りマスタ" as m_favorite <m_category> <<M,MASTER_MARK_COLOR>>{
 + customaer_id[PK][NN]
++ item_code[PK][NN]
 --
 category_id
 del_flag

@@ -71,9 +71,10 @@
 |顧客コード|customer_id|varchar(50)||〇|〇|
 |商品コード|item_code|int(11)||〇|〇|
 |商品名|item_name|varchar(50)||〇||
+|画像ファイル名|image|varchar(200)||〇||
 |価格|price|int(11)||〇||
 |数量|num|int(11)||〇||
-|合計価格|total_price||〇||
+|合計価格|total_price|int(11)||〇||
 |削除フラグ|del_date|int(11)||||
 
 

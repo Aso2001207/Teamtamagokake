@@ -89,6 +89,14 @@ reg_date
 
 }
 
+entity "カートテーブル" as d_cart <d_cart> <<T,TEBUE_MARK_COLOR>>{
++ cart_id[PK][NN]
+--
+
+
+}
+
+
 purchase }o--o| m_customers 
  d_purchase_detail }|--|| purchase
  m_items }o--|| m_category

@@ -92,7 +92,14 @@ reg_date
 entity "カートテーブル" as d_cart <d_cart> <<T,TEBUE_MARK_COLOR>>{
 + cart_id[PK][NN]
 --
-
+customer_id
+item_cod
+item_name
+image
+price
+num
+total_price
+del_date
 
 }
 
@@ -102,7 +109,10 @@ purchase }o--o| m_customers
  m_items }o--|| m_category
  m_favorite }o-ri- m_customers
  m_favorite }o-do- m_items
-
+ d_cart |--o| d_purchase_detail
+ d_cart }o--|{ m_items
+ d_cart }o--|{ m_customers
+ d_cart |--o| purchase
 
 
 

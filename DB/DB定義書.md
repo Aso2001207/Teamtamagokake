@@ -64,4 +64,16 @@
 |削除フラグ|del_flag|int(11)||||
 |登録日|reg_date|date||〇||
 
+## カートテーブル d_cart
+|和名|属性名|型|PK|NN|FK|
+|----|-----|--|--|--|--|
+|カートID|cart_id|bigint(20)|〇|||
+|顧客コード|customer_id|varchar(50)||〇|〇|
+|商品コード|item_code|int(11)||〇|〇|
+|商品名|item_name|varchar(50)||〇||
+|価格|price|int(11)||〇||
+|数量|num|int(11)||〇||
+|合計価格|total_price||〇||
+|削除フラグ|del_date|int(11)||||
+
 

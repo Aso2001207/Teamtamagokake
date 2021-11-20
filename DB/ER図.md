@@ -24,7 +24,7 @@ skinparam class {
  entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
 + order_id[PK]
 --
-customer_code
+customer_id
 purchase_date
 total_price
 
@@ -33,8 +33,8 @@ total_price
 
 entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail> <<T,TEBUE_MARK_COLOR>>{
 + order_id [PK][NN][FK]
-+ detail_id [PK]
 --
+detail_id 
 item_code
 price
 num
@@ -44,7 +44,7 @@ num
 
 
 entity "顧客マスタ" as m_customers <m_customers> <<M,MASTER_MARK_COLOR>>{
-+ customaer_code [PK][NN]
++ customaer_id [PK][NN]
 + pass[PK][NN]
 --
 name

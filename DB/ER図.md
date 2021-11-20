@@ -48,7 +48,7 @@ entity "顧客マスタ" as m_customers <m_customers> <<M,MASTER_MARK_COLOR>>{
 + pass[PK][NN]
 --
 name
-address
+adress
 tel
 mail
 del_flag

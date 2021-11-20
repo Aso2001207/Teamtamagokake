@@ -45,8 +45,8 @@ num
 
 entity "顧客マスタ" as m_customers <m_customers> <<M,MASTER_MARK_COLOR>>{
 + customaer_code [PK][NN]
++ pass[PK][NN]
 --
-pass
 name
 address
 tel

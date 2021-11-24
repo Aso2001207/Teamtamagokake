@@ -46,9 +46,10 @@
 ## お気に入りマスタm_favorite
 |和名|属性名|型|PK|NN|FK|
 |----|-----|--|--|--|--|
-|顧客コード|customer_id|varchar(50)|〇|〇|〇|
+|お気に入りコード|favorite_code|int(20)|〇|〇||
+|顧客コード|customer_id|varchar(50)||〇|〇|
 |カテゴリID|category_id|int(11)||〇|〇|
-|商品コード|item_code|int(11)|〇|〇|〇|
+|商品コード|item_code|int(11)||〇|〇|
 |削除フラグ|del_date|int(11)||||
 
 

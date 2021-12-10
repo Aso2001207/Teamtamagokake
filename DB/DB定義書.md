@@ -21,6 +21,7 @@
 |オーダー詳細ID|detail_id|bigint(20)|〇|〇||
 |オーダーID|order_id|bigint(20)||〇|〇|
 |商品コード|item_code|int(11)||〇||
+|商品名|item_name|varchar(50)||〇||
 |価格|price|int(11)||〇||
 |数量|num|int(11)||〇||
 

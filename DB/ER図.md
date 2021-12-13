@@ -109,10 +109,6 @@ purchase }o--o| m_customers
  m_items }o--|| m_category
  m_favorite }o-ri- m_customers
  m_favorite }o-do- m_items
- d_cart |--o| d_purchase_detail
- d_cart }o--|{ m_items
- d_cart }o--|{ m_customers
- d_cart |--o| purchase
 
 
 

@@ -102,6 +102,7 @@ total_price
 del_date
 
 }
+}
 
 
 purchase }o--o| m_customers 

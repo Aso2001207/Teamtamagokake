@@ -20,6 +20,8 @@ skinparam class {
     ArrowColor Black
 }
 
+package "bookサイト" as target_system {
+
 
  entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
 + order_id[PK]
@@ -88,6 +90,7 @@ detail
 del_flag
 reg_date
 
+}
 }
 
 

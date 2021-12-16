@@ -24,7 +24,7 @@ package "bookサイト" as target_system {
 
 
  entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
-+ order_id[PK]
++ order_id[PK][NN]
 --
 customer_id
 purchase_date
@@ -34,11 +34,11 @@ total_price
 
 
 entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail> <<T,TEBUE_MARK_COLOR>>{
-+ order_id [PK][NN][FK]
++ detail_id[PK][NN]
 --
-detail_id 
+order_id
+item_name
 item_code
-
 price
 num
 
@@ -69,9 +69,11 @@ reg_date
 }
 
 entity "お気に入りマスタ" as m_favorite <m_category> <<M,MASTER_MARK_COLOR>>{
-+ customaer_id[PK][NN]
-+ item_code[PK][NN]
++ favorite_id[PK][NN]
++ 
 --
+customaer_id
+item_code
 del_flag
 
 }
@@ -91,6 +93,16 @@ del_flag
 reg_date
 
 }
+entity "履歴テーブル" as d_history <d_history><<T,TEBUE_MARK_COLOR>>{
++ history_id[PK][NN]
+--
+customer_id
+image
+item_name
+price
+num
+purchase_date
+del_flg
 }
 
 

@@ -36,6 +36,7 @@ entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail> <<T,T
 --
 detail_id 
 item_code
+
 price
 num
 
@@ -89,19 +90,7 @@ reg_date
 
 }
 
-entity "カートテーブル" as d_cart <d_cart> <<T,TEBUE_MARK_COLOR>>{
-+ cart_id[PK][NN]
---
-customer_id
-item_cod
-item_name
-image
-price
-num
-total_price
-del_date
 
-}
 }
 
 

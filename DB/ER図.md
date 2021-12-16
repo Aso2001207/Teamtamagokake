@@ -97,8 +97,8 @@ entity "履歴テーブル" as d_history <d_history><<T,TEBUE_MARK_COLOR>>{
 + history_id[PK][NN]
 --
 customer_id
-image
 item_name
+image
 price
 num
 purchase_date

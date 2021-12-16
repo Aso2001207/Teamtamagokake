@@ -91,7 +91,7 @@ reg_date
 }
 
 
-}
+
 
 
 purchase }o--o| m_customers 

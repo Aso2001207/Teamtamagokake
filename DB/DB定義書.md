@@ -72,6 +72,7 @@
 |履歴コード|history_id|int(20)|〇|〇||
 |顧客コード|customer_id|varchar(50)||〇|〇|
 |商品名|item_name|varchar(50)||〇||
+|画像ファイル名|image|varchar(200)||〇||
 |価格|price|int(11)||〇||
 |数量|num|int(11)||〇||
 |購入日|purchase_date|date||〇||

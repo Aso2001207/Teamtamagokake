@@ -74,7 +74,7 @@
 |商品名|item_name|varchar(50)||〇||
 |価格|price|int(11)||〇||
 |数量|num|int(11)||〇||
-|購入日|purchase_date||〇||
+|購入日|purchase_date|date||〇||
 |削除フラグ|del_flag|int(11)||||
 
 

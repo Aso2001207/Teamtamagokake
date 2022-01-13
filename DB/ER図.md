@@ -110,7 +110,7 @@ del_flg
 
 
 d_purchase }o--o| m_customers 
- d_purchase_detail }|--|| purchase
+ d_purchase_detail }|--|| d_purchase
  m_items }o-le-|| m_category
  m_favorite }o-do- m_customers
  m_favorite }o-le- m_items

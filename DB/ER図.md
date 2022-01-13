@@ -23,7 +23,7 @@ skinparam class {
 package "bookサイト" as target_system {
 
 
- entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
+ entity "購入テーブル" as d_purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
 + order_id[PK][NN]
 --
 customer_id
@@ -109,11 +109,16 @@ del_flg
 
 
 
-purchase }o--o| m_customers 
+d_purchase }o--o| m_customers 
  d_purchase_detail }|--|| purchase
  m_items }o--|| m_category
  m_favorite }o-ri- m_customers
  m_favorite }o-do- m_items
+ d_history |--| d_purchase
+ d_history |--| d_purchase_detail
+ d_history }|--o{ m_customers
+ d_history }o--o{ m_favorite
+ d_history }o--|{ m_items
 
 
 

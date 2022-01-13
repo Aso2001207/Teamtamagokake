@@ -112,8 +112,8 @@ del_flg
 d_purchase }o--o| m_customers 
  d_purchase_detail }|--|| purchase
  m_items }o--|| m_category
- m_favorite }o-ri- m_customers
- m_favorite }o-do- m_items
+ m_favorite }o-- m_customers
+ m_favorite }o-- m_items
  d_history |--| d_purchase
  d_history |--| d_purchase_detail
  d_history }|--o{ m_customers

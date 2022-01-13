@@ -114,7 +114,7 @@ d_purchase }o--o| m_customers
  m_items }o-le-|| m_category
  m_favorite }o-do- m_customers
  m_favorite }o-le- m_items
- d_history |-le-| d_purchase
+ d_history |--| d_purchase
  d_history |-do-| d_purchase_detail
  d_history }|-ri-o{ m_customers
  d_history }o-ri-o{ m_favorite
